@@ -24,18 +24,19 @@
                     $statement->bind_param("i", $_GET['id']);
                     $statement->execute();
                     $result = $statement->get_result();
+                    if($result->num_rows === 0) exit('This user does not exist!');
                     while($row = $result->fetch_assoc()) {
                         $finalstring = "<h3>User ".$row['username']."</h3>
                         <img class=\"user-pic\" src=\"pfp/".getUserPic($row["id"])."\">
                         <div class=\"user-info\">
                             <div class=\"user-name\"><a href=\"profile.php?id=".$row["id"]."\">".$row["username"]."</a></div>
                             <div><span class=\"black\">".$row["subscribers"]."</span> subscribers</div>";
-                            if($_SESSION["subscribedto".$row["id"]] === false) {
+                         /*   if($_SESSION["subscribedto".$row["id"]] === false) {
                                 $finalstring .= "<div><a href=\"subscribe.php?id=".$row["id"]."&u=0\"><img src=\"buttonsub.png\"></a></div>";
                             }
                             else{
                                 $finalstring .= "<div><a href=\"subscribe.php?id=".$row["id"]."&u=1\"><img src=\"buttonunsub.png\"></a></div>";
-                            }
+                            } */
                         $finalstring .= "</div>";
 
                         echo $finalstring;

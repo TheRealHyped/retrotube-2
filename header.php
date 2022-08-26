@@ -35,7 +35,7 @@
 			content: var(--rlogo);
 		}
 	</style>
-	<a class="brand-logo" href="."><img src="retrotube.gif"></a>
+	<a class="brand-logo" href="."><img src="retrotube.gif.png"></a>
 	<?php
       if(!$loggedIn) {
         echo '<div class="menu-element"><strong><a href="./aregister.php">Sign Up</a></strong> | <a href="./alogin.php">Login</a> | <a href="./help.php">Help</a></div>';
@@ -55,7 +55,7 @@
 	    <a class="col-generic header-button" href="./">Home</a>
 	    <a class="col-generic header-button" href="./videos.php">Videos</a>
 	    <a class="col-generic header-button" href="./channels.php">Channels</a>
-	    <a class="col-generic header-button" href="./community.php">Community</a>
+	    <a class="col-generic header-button" href="./community.php">Discord</a>
 	    <a class="menu-element" href="./upload.php"><img src="buttonupload.png"></a>
 	</div>
 	<div class="header">
@@ -71,4 +71,4 @@
     font-size: 12px;
     border-radius: 7px;
     text-align: center;
-">we now have a discord server, <strong><a href="https://discord.gg/hNv54nqd3u">join now!</a></strong></div>
+">this is the retrotube of all time</div>

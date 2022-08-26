@@ -108,15 +108,15 @@
                     Member Login
                 </div>
                 <div class="card-content">
-                    <form method="post" action="">
+                    <form method="post" action="alogin.php">
                         <div class="input-group">
                             <label>Username: </label>
                             <input type="text" name="name">
                         </div> 
-                        <div class="input-group">
+                  <!--      <div class="input-group">
                             <label>Email: </label>
                             <input type="email" name="email">
-                         </div>
+                         </div> -->
                         <div class="input-group">
                             <label>Password: </label>
                             <input type="password" name="password">
@@ -133,7 +133,7 @@
             ?>
             <div class="card message">
                 <div class="card-header">Whats New</div>
-                real?!?!?!??
+                Retrotube 2 confirm.....
             </div>
         </div>
         </div>

@@ -15,10 +15,10 @@
                         <label>Username: </label>
                         <input type="text" name="name" required>
                     </div>
-                    <div class="input-group">
+           <!--         <div class="input-group">
                         <label>Email: </label>
                         <input type="email" name="email" required>
-                    </div>
+                    </div> --->
                     <div class="input-group">
                         <label>Password: </label>
                         <input type="password" name="password" required>

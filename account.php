@@ -75,7 +75,7 @@
 		</div>
 		<hr>
 		<div class="col-1-2">
-			<h3>Your Account Details</h3>
+			<h3>Your Account</h3>
 			<?php
 			if(isset($_SESSION['profileuser3'])){
 			    $statement = $mysqli->prepare("SELECT * FROM users WHERE username = ? LIMIT 1");
@@ -95,7 +95,7 @@
 				        </div>
 			        </div>
 			        <hr>
-			        <h3>Your Current Description</h3>
+			        <h3>Current Description</h3>
 			        <textarea class=\"current-description\" readonly>".$row["description"]."</textarea>";
 			    }
 			    $statement->close();
